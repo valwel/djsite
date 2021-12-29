@@ -1,0 +1,214 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.arial {
+  display: flex;
+}
+
+.arial li {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.arial li:nth-child(n + 2) {
+  margin-left: 56px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 223px;
+  margin-right: 65px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: #1c1b21;
+}
+
+.main-section {
+  background-image: url(./images/baba.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-bottom: 90px;
+}
+
+.single {
+  margin-top: 412px;
+}
+
+.ns {
+}
+
+.wfl {
+  margin: 20px 0 80px;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  margin-top: 157px;
+}
+
+.card:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.card-content {
+  background-color: rgba(122, 102, 204, 0.7);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  padding: 20px 40px;
+  font-weight: bold;
+  border-radius: 0 0 20px 0;
+}
+
+.card-image {
+  border-radius: 20px 0px;
+}
+
+.card-text {
+  color: #fff;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+  border-bottom: 0.07em solid;
+}
+a:active {
+  color: #fff;
+  border-bottom: 1px dashed;
+}
+
+.cards {
+  display: flex;
+}
+
+.header2 {
+  justify-content: left;
+}
+
+.equalizer {
+  width: 64px;
+  height: 31px;
+}
+
+.heading {
+  margin-left: 30px;
+  font-size: 48px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 540px;
+  margin-top: 60px;
+  color: #fff;
+}
