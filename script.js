@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   for (let i = 0; i < tracksList.length; i++) {
-    tracёksList[i].addEventListener("click", function(e){
+    tracksList[i].addEventListener("click", function(e){
       setActiveTrack(e.currentTarget)
 
 
